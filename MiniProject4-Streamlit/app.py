@@ -19,5 +19,4 @@ st.set_page_config(
     initial_sidebar_state="expanded",
     menu_items={        
     }
-    
 )
