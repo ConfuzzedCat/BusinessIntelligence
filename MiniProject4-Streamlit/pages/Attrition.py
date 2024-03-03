@@ -91,7 +91,8 @@ input_df = pd.DataFrame({
                             'OverTime_Yes': [OverTime_input]})
 
 # Predict
+st.subheader(f'Will they leave this job?')
 if st.button('Predict'):
     prediction = model.predict(input_df)
     y_n = 'Yes' if prediction[0] == 1 else 'No'
-    st.subheader(f'Will they leave this job? {y_n}')
+    st.text(y_n)
